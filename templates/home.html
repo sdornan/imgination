@@ -1,5 +1,9 @@
-<form action="." method="POST" enctype="multipart/form-data">
+{% extends "layout.html" %}
+
+{% block body %}
+  <form action="." method="POST" enctype="multipart/form-data">
     {{ form.csrf_token }}
     {{ form.upload.label }} {{ form.upload }}
     <input type="submit" value="Upload">
-</form>
+  </form>
+{% endblock %}

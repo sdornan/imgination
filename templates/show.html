@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <p><img src="{{ url }}"></p>
+
+  <p>Uploaded by {{ image.uploaded_by }} at {{ image.uploaded_at }}</p>
+{% endblock %}
